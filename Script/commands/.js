@@ -8,13 +8,13 @@ const link = [
 ];
 
 module.exports.config = {
- name: "allah",
+ name: ".",
  version: "1.0.0",
  hasPermssion: 0,
  credits: "Islamick Chat",
  description: "auto reply to salam",
  commandCategory: "noprefix",
- usages: "allah",
+ usages: ".",
  cooldowns: 5,
  dependencies: {
  "request":"",
@@ -26,7 +26,7 @@ module.exports.config = {
 module.exports.handleEvent = async ({ api, event, Threads }) => {
  const content = event.body ? event.body : '';
  const body = content.toLowerCase();
- if (body.startsWith("allah")) {
+ if (body.startsWith(".")) {
  const rahad = [
  "╭•┄┅════❁🌺❁════┅┄•╮\n \n আল্লাহ আপনি এ পর্যন্ত যা দিছেন আলহামদুলিল্লাহ!!🥰\n\n╰•┄┅════❁🌺❁════┅┄•╯",
  "╭•┄┅════❁🌺❁════┅┄•╮\n\nআল্লাহ আপনি এ পর্যন্ত যা দিছেন আলহামদুলিল্লাহ!!🥰\n\n╰•┄┅════❁🌺❁════┅┄•╯"
